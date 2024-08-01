@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>House Price Prediction</h1>
+        <form action="/predict" method="post">
+           
+            <label for="Square Footage">Square Footage:</label>
+            <input type="number" id="Square Footage" name="Square Footage" step="0.01" required>
+
+            <label for="Bedrooms">Bedrooms:</label>
+            <input type="number" id="Bedrooms" name="Bedrooms" step="0.01" required>
+
+            <label for="Pool">Pool:</label>
+            <select id="Pool" name="Pool" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label for="Central Air">Central Air:</label>
+            <select id="Central Air" name="Central Air" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label for="Heating Type">Heating Type:</label>
+            <select id="Heating Type" name="Heating Type" required>
+                
+                <option value="0">Gas</option>
+                <option value="1">Electric</option>
+                <option value="2">Oil</option>
+            </select>
+
+            <label for="Crime Rate">Crime Rate:</label>
+            <select id="Crime Rate" name="Crime Rate" required>
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+            </select>
+
+            <label for="Bathrooms">Bathrooms:</label>
+            <input type="number" id="Bathrooms" name="Bathrooms" step="0.01" required>
+
+            <label for="Floors">Floors:</label>
+            <input type="number" id="Floors" name="Floors" step="0.01" required>
+
+            <label for="Garage">Garage:</label>
+            <input type="number" id="Garage" name="Garage" step="0.01" required>
+
+            <label for="Distance to City Center">Distance to City Center:</label>
+            <input type="number" id="Distance to City Center" name="Distance to City Center" step="0.01" required>
+
+            <label for="Property Tax">Property Tax:</label>
+            <input type="number" id="Property Tax" name="Property Tax" step="0.01" required>
+
+            <label for="Previous Sale Price">Previous Sale Price:</label>
+            <input type="number" id="Previous Sale Price" name="Previous Sale Price" step="0.01" required>
+
+            <input type="submit" value="Predict Price">
+        </form>
+    </div>
+</body>
+</html>
