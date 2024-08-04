@@ -58,7 +58,12 @@ def predict():
     # Predict the price
     prediction = model.predict(df)[0]
     
-    return render_template('result.html', prediction=prediction)
+    return render_template('index.html', prediction=prediction)
+
+
+@app.route('/popout')
+def popout():
+    return render_template()
 
 if __name__ == '__main__':
     app.run(debug=True)

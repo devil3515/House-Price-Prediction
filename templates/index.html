@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Price Prediction</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>House Price Prediction</h1>
         <form action="/predict" method="post">
-           
             <label for="Square Footage">Square Footage:</label>
             <input type="number" id="Square Footage" name="Square Footage" step="0.01" required>
 
@@ -31,7 +30,6 @@
 
             <label for="Heating Type">Heating Type:</label>
             <select id="Heating Type" name="Heating Type" required>
-                
                 <option value="0">Gas</option>
                 <option value="1">Electric</option>
                 <option value="2">Oil</option>
@@ -65,5 +63,17 @@
             <input type="submit" value="Predict Price">
         </form>
     </div>
+
+    <!-- Modal Window -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Prediction Result</h2>
+            <p id="predictionValue">{{ prediction }}</p>
+            <button id="modalCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
