@@ -2,6 +2,9 @@
 
 **A machine learning project that predicts house prices based on various factors like location, size, and the number of rooms. This project uses multiple algorithms to build predictive models and provides a web interface for real-time predictions.**
 
+## 🌐 Live Link
+Check out the live version of the app here: [House Price Prediction App](https://house-price-prediction-d8ky.onrender.com/)
+
 ## 📋 Overview
 
 The goal of this project is to accurately predict house prices using a dataset of historical housing data. The project involves data preprocessing, model building, evaluation, and deployment using a simple Flask web application.
@@ -18,7 +21,8 @@ The goal of this project is to accurately predict house prices using a dataset o
   - Pandas
   - NumPy
   - Scikit-learn
-  - **Framework**: Flask (for web application)
+  - Matplotlib / Seaborn (for visualization)
+- **Framework**: Flask (for web application)
 - **Tools**: Jupyter Notebook, Git
 
 ## 📂 Project Structure
@@ -30,8 +34,8 @@ The goal of this project is to accurately predict house prices using a dataset o
 ├── static/             # CSS and image files
 ├── data/               # Dataset (CSV file)
 ├── notebooks/          # Jupyter notebooks for data analysis and model development
-├── models              # Saved machine learning model
-
+├── models/             # Saved machine learning models
+├── README.md           # Project documentation
 ```
 
 ## 🔧 Installation
